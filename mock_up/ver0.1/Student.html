@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Activity</title>
+    <style>
+        table,
+        th,
+        td {
+            border: solid thin rgb(201, 201, 201);
+            border-left: none;
+            border-right: none;
+            border-collapse: collapse;
+
+        }
+
+        th {
+            background-color: rgb(94, 142, 248);
+
+        }
+
+        td {
+            color: blue;
+            text-align: center;
+        }
+
+        table {
+            width: 1500px;
+        }
+
+        #id {
+            color: black;
+        }
+
+        #img {
+            height: 100px;
+            width: 80px;
+        }
+
+        .status#absent {
+            color: red;
+        }
+
+        .status#present {
+            color: green;
+        }
+
+        .record,
+        .comment {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Single activity presentance</h1>
+    presentance for PRF192 with lecturer Sonnt5 at Slot1 on Wednesday 19/01/2022 Spring2022 , in room BE-301 at FU-HL
+    <table class="table" style="width: 100%;">
+        <thead>
+            <tr>
+                <th scope="col">NO</th>
+                <th scope="col">GROUP</th>
+                <th scope="col">CODE</th>
+                <th scope="col" style="width: 20%;">NAME</th>
+                <th scope="col">IMAGE</th>
+                <th scope="col">STATUS</th>
+                <th scope="col">COMMENT</th>
+                <th scope="col">TAKER</th>
+                <th scope="col">RECORD TIME</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td id="id">1</td>
+                <td class="group">IOT1702</td>
+                <td class="code">HE130430</td>
+                <td class="name" style="font-weight: bold;">Đỗ Mạnh Hùng</td>
+                <td><img id="img" src="image.jpg" alt="student_image"></td>
+                <td class="status" id="absent">Absent</td>
+                <td class="comment"></td>
+                <td class="taker">sonnt5</td>
+                <td class="record">1/19/2022 8:54:00 AM</td>
+            </tr>
+            <tr>
+                <td id="id">2</td>
+                <td class="group">IOT1702</td>
+                <td class="code">HE141602</td>
+                <td class="name" style="font-weight: bold;">Nguyễn Việt Hoàng</td>
+                <td><img id="img" src="image.jpg" alt="student_image"></td>
+                <td class="status" id="present">Present</td>
+                <td class="comment"></td>
+                <td class="taker">sonnt5</td>
+                <td class="record">1/19/2022 8:54:00 AM</td>
+            </tr>
+            <tr>
+                <td id="id">3</td>
+                <td class="group">IOT1702</td>
+                <td class="code">HE150671</td>
+                <td class="name" style="font-weight: bold;">Hoàng Văn Tân</td>
+                <td><img id="img" src="image.jpg" alt="student_image"></td>
+                <td class="status" id="present">Present</td>
+                <td class="comment"></td>
+                <td class="taker">sonnt5</td>
+                <td class="record">1/19/2022 8:54:00 AM</td>
+            </tr>
+            <tr>
+                <td id="id">4</td>
+                <td class="group">IOT1702</td>
+                <td class="code">HE160258</td>
+                <td class="name" style="font-weight: bold;">Phan Kiến Quốc</td>
+                <td><img id="img" src="image.jpg" alt="student_image"></td>
+                <td class="status" id="present">Present</td>
+                <td class="comment"></td>
+                <td class="taker">sonnt5</td>
+                <td class="record">1/19/2022 8:54:00 AM</td>
+            </tr>
+            <tr>
+                <td id="id">5</td>
+                <td class="group">IOT1702</td>
+                <td class="code">HE160498</td>
+                <td class="name" style="font-weight: bold;">Vũ Minh Quang</td>
+                <td><img id="img" src="image.jpg" alt="student_image"></td>
+                <td class="status" id="present">Present</td>
+                <td class="comment"></td>
+                <td class="taker">sonnt5</td>
+                <td class="record">1/19/2022 8:54:00 AM</td>
+            </tr>
+            <tr>
+                <td id="id">6</td>
+                <td class="group">IOT1702</td>
+                <td class="code">HE160633</td>
+                <td class="name" style="font-weight: bold;">Ngô Dương Ngọc</td>
+                <td><img id="img" src="image.jpg" alt="student_image"></td>
+                <td class="status" id="absent">Absent</td>
+                <td class="comment"></td>
+                <td class="taker">sonnt5</td>
+                <td class="record">1/19/2022 8:54:00 AM</td>
+            </tr>
+            <tr>
+                <td id="id">7</td>
+                <td class="group">IOT1702</td>
+                <td class="code">HE160658</td>
+                <td class="name" style="font-weight: bold;">Trần Quý Đạt</td>
+                <td><img id="img" src="image.jpg" alt="student_image"></td>
+                <td class="status" id="present">Present</td>
+                <td class="comment"></td>
+                <td class="taker">sonnt5</td>
+                <td class="record">1/19/2022 8:54:00 AM</td>
+            </tr>
+        </tbody>
+    </table>
+    <p><input type="button" value="ADD"></p>
+</body>
+</html>
